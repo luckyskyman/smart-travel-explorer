@@ -27,7 +27,7 @@ module.exports = async (req, res) => {
     console.log(`[API] Keyword received: "${keyword}"`);
 
     const apiUrl = `http://apis.data.go.kr/B551011/KorService2/searchKeyword2?serviceKey=${TOUR_API_KEY}&keyword=${encodeURIComponent(keyword)}&MobileOS=ETC&MobileApp=SmartTravel&_type=json&arrange=A`;
-    console.log(`[API] Calling TourAPI with URL: ${apiUrl}`);
+    console.log(`[API] Constructed API URL: ${apiUrl}`); // 디버깅 코드 추가
 
     try {
         const response = await axios.get(apiUrl);
