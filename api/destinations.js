@@ -1,8 +1,8 @@
-
 const axios = require('axios');
 
 // CORS를 허용하고 API 요청을 처리하는 핸들러 함수
 module.exports = async (req, res) => {
+    console.log('--- Vercel Environment Variables ---', process.env); // 디버깅 코드 추가
     // Vercel 배포 환경에서는 자동으로 CORS를 처리해주지만, 로컬 개발 환경 등을 위해 헤더를 설정합니다.
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
