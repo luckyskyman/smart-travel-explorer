@@ -1,0 +1,6 @@
+contents.js:1 initialize @ contents.ts http://localhost:8000/
+contents.js:1 showSearchLayer http://localhost:8000/
+contents.js:1 Successfully processed #nx_right_related_keywords
+contents.js:1 Element #main_pack not found
+contents.js:1 showSearchLayoutPCRight start ccfm-iframe-webpage-new
+contents.js:1 showPCRightLayout @ search-layer.ts query is null

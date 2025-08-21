@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스마트 여행지 탐색기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>스마트 여행지 탐색기</h1>
+    </header>
+    <main>
+        <section id="search-section">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="가족과 함께 갈 수 있는 제주도 맛집 추천해줘">
+                <button id="search-button">검색</button>
+            </div>
+        </section>
+
+        <section id="profile-section">
+            <h2>✨ AI 개인화 설정</h2>
+            <div class="profile-grid">
+                <div id="travel-style">
+                    <h4>여행 스타일</h4>
+                    <button class="profile-btn" data-style="힐링">힐링</button>
+                    <button class="profile-btn" data-style="액티비티">액티비티</button>
+                    <button class="profile-btn" data-style="문화">문화</button>
+                    <button class="profile-btn" data-style="미식">미식</button>
+                </div>
+                <div id="companion-type">
+                    <h4>동반자 유형</h4>
+                    <button class="profile-btn" data-companion="혼자">혼자</button>
+                    <button class="profile-btn" data-companion="연인">연인</button>
+                    <button class="profile-btn" data-companion="가족">가족</button>
+                    <button class="profile-btn" data-companion="친구">친구</button>
+                </div>
+                <div id="budget-range">
+                    <h4>예산 범위 (1인)</h4>
+                    <input type="range" id="budget-slider" min="1" max="100" value="50">
+                    <p>최대 <span id="budget-value">50</span>만원</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="recommendations">
+            <h2>AI 추천 여행지</h2>
+            <div id="cards-container" class="grid-container">
+                <!-- 여행지 카드는 script.js에서 동적으로 생성됩니다. -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Map Modal -->
+    <div id="map-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3 id="map-modal-title"></h3>
+            <div id="map-container">
+                <!-- Google Maps Embed will go here -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 스마트 여행지 탐색기. All rights reserved.</p>
+    </footer>
+        
+    <script src="script.js"></script>
+</body>
+</html>

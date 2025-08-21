@@ -1,0 +1,66 @@
+{
+  "destinations": [
+    {
+      "id": "jeju_001",
+      "name": "제주 애월해안도로",
+      "category": ["힐링", "드라이브"],
+      "suitableFor": ["연인", "친구", "혼자"],
+      "coordinates": {"lat": 33.4633, "lng": 126.3074},
+      "aiScore": 95,
+      "reason": "당신의 힐링 여행 스타일과 완벽 매치!",
+      "weather": "맑음",
+      "temperature": "22°C",
+      "congestion": "여유로움",
+      "bestTime": "오전 9-11시",
+      "image": "https://images.unsplash.com/photo-1528795259122-b9ab6c39c992?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "gangwon_001",
+      "name": "강원도 속초해수욕장",
+      "category": ["액티비티", "해변"],
+      "suitableFor": ["친구", "가족", "연인"],
+      "coordinates": {"lat": 38.1919, "lng": 128.6049},
+      "aiScore": 92,
+      "reason": "짜릿한 액티비티를 즐기기에 최적!",
+      "weather": "구름 조금",
+      "temperature": "20°C",
+      "congestion": "보통",
+      "bestTime": "오후 2-4시",
+      "image": "https://images.unsplash.com/photo-1580744495239-3b9658245392?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "gyeongju_001",
+      "name": "경주 불국사",
+      "category": ["문화", "역사"],
+      "suitableFor": ["가족", "혼자"],
+      "coordinates": {"lat": 35.7904, "lng": 129.3322},
+      "aiScore": 98,
+      "reason": "역사와 문화를 사랑하는 당신을 위한 곳",
+      "weather": "맑음",
+      "temperature": "24°C",
+      "congestion": "여유로움",
+      "bestTime": "오전 10-12시",
+      "image": "https://images.unsplash.com/photo-1633455824535-71f84c673249?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "seoul_001",
+      "name": "서울 홍대거리",
+      "category": ["미식", "문화"],
+      "suitableFor": ["친구", "연인"],
+      "coordinates": {"lat": 37.5559, "lng": 126.9238},
+      "aiScore": 90,
+      "reason": "트렌디한 문화와 맛집을 원한다면!",
+      "weather": "흐림",
+      "temperature": "25°C",
+      "congestion": "혼잡",
+      "bestTime": "오후 6-8시",
+      "image": "https://images.unsplash.com/photo-1579027989536-b7b1f875659b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
+  ],
+  "userProfile": {
+    "travelStyle": "healing",
+    "budget": [100000, 500000],
+    "companion": "family",
+    "preferences": []
+  }
+}

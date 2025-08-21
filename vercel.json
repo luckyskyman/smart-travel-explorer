@@ -1,0 +1,17 @@
+{
+  "functions": {
+    "api/destinations.js": {
+      "memory": 128
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/destinations.js"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

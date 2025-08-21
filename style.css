@@ -1,0 +1,261 @@
+/* 기본 스타일 */
+:root {
+    --primary-color: #667eea;
+    --secondary-color: #764ba2;
+    --accent-color: #f093fb;
+    --background-dark: #0f0f23;
+    --background-light: #ffffff;
+    --text-dark: #ffffff;
+    --text-light: #000000;
+}
+
+body {
+    font-family: 'Pretendard', sans-serif;
+    margin: 0;
+    background-color: var(--background-light);
+    color: var(--text-light);
+}
+
+/* 레이아웃 */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* 데스크톱: 3열 그리드 */
+@media (min-width: 992px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* 태블릿: 2열 그리드 */
+@media (min-width: 768px) and (max-width: 991px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 모바일: 1열 스택 */
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    #search-section {
+        padding: 20px 10px;
+    }
+
+    .search-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #search-input {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    #search-button {
+        width: 90%;
+        margin-left: 0;
+    }
+
+    #profile-section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .profile-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-content {
+        width: 90%;
+        margin: 20% auto;
+    }
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--text-dark);
+}
+
+#search-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+}
+
+#search-input {
+    width: 50%;
+    padding: 10px;
+    border-radius: 16px;
+    border: 1px solid #ccc;
+}
+
+#search-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.card {
+    border: 1px solid #eee;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    background-color: white;
+    transform-style: preserve-3d;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.real-time-info {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+/* AI 개인화 설정 섹션 */
+#profile-section {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 16px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+#profile-section h2 {
+    margin-top: 0;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    align-items: start;
+}
+
+.profile-grid > div {
+    padding: 15px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.profile-btn {
+    padding: 8px 16px;
+    border: 1px solid var(--primary-color);
+    background-color: white;
+    color: var(--primary-color);
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.profile-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.profile-btn.active {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+}
+
+#budget-slider {
+    width: 80%;
+    cursor: pointer;
+}
+
+/* Map Button */
+.map-btn {
+    padding: 8px 16px;
+    border: 1px solid var(--secondary-color);
+    background-color: transparent;
+    color: var(--secondary-color);
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.map-btn:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+/* Map Modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 700px;
+    border-radius: 16px;
+    position: relative;
+}
+
+.close-button {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#map-container {
+    width: 100%;
+    height: 400px;
+    background-color: #eee;
+}
+
+#map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}

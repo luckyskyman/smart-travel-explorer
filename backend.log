@@ -1,0 +1,21 @@
+백엔드 서버가 http://localhost:3000 에서 실행 중입니다.
+--- [Backend] Received a request ---
+[Backend] Keyword received: "서울"
+[Backend] Calling TourAPI with URL: http://apis.data.go.kr/B551011/KorService2/searchKeyword2?serviceKey=lraiJge/9wJ/6H8buPD84%2B5eilU7MUPVUbHB509NNcNcscVFBOZafWhwNgnNfamMjIqzLoIMgUjQbslPXWTs4Q==&keyword=%EC%84%9C%EC%9A%B8&MobileOS=ETC&MobileApp=SmartTravel&_type=json&arrange=A
+[Backend] Successfully received response from TourAPI.
+[Backend] Found 10 items. Processing and sending to frontend.
+--- [Backend] Received a request ---
+[Backend] Keyword received: "경주가볼만한곳"
+[Backend] Calling TourAPI with URL: http://apis.data.go.kr/B551011/KorService2/searchKeyword2?serviceKey=lraiJge/9wJ/6H8buPD84%2B5eilU7MUPVUbHB509NNcNcscVFBOZafWhwNgnNfamMjIqzLoIMgUjQbslPXWTs4Q==&keyword=%EA%B2%BD%EC%A3%BC%EA%B0%80%EB%B3%BC%EB%A7%8C%ED%95%9C%EA%B3%B3&MobileOS=ETC&MobileApp=SmartTravel&_type=json&arrange=A
+[Backend] Successfully received response from TourAPI.
+[Backend] No items found in the API response. Sending empty array.
+--- [Backend] Received a request ---
+[Backend] Keyword received: "경주"
+[Backend] Calling TourAPI with URL: http://apis.data.go.kr/B551011/KorService2/searchKeyword2?serviceKey=lraiJge/9wJ/6H8buPD84%2B5eilU7MUPVUbHB509NNcNcscVFBOZafWhwNgnNfamMjIqzLoIMgUjQbslPXWTs4Q==&keyword=%EA%B2%BD%EC%A3%BC&MobileOS=ETC&MobileApp=SmartTravel&_type=json&arrange=A
+[Backend] Successfully received response from TourAPI.
+[Backend] Found 10 items. Processing and sending to frontend.
+--- [Backend] Received a request ---
+[Backend] Keyword received: "경주"
+[Backend] Calling TourAPI with URL: http://apis.data.go.kr/B551011/KorService2/searchKeyword2?serviceKey=lraiJge/9wJ/6H8buPD84%2B5eilU7MUPVUbHB509NNcNcscVFBOZafWhwNgnNfamMjIqzLoIMgUjQbslPXWTs4Q==&keyword=%EA%B2%BD%EC%A3%BC&MobileOS=ETC&MobileApp=SmartTravel&_type=json&arrange=A
+[Backend] Successfully received response from TourAPI.
+[Backend] Found 10 items. Processing and sending to frontend.
